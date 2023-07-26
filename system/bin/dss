@@ -119,13 +119,11 @@ for i in $PLIST; do
     dodis $CMD "$i/com.google.firebase.provider.FirebasePerfProvider" &
     
     #our fork
-    dodis $CMD "$i/com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" &
-    dodis $CMD "$i/com.facebook.adspayments.analytics.ExperimentExposeService" &
-    dodis $CMD "$i/com.facebook.notifications.appwidget.bugreporter.NotificationsWidgetDebugHelper" &
-    dodis $CMD "$i/com.google.android.gms.ads.settings.AdsSettingsActivity" &
-    dodis $CMD "$i/com.google.android.gms.common.config.PhenotypeCheckinService" &
-    dodis $CMD "$i/com.google.android.gms.measurement.service.MeasurementBrokerService" &
-    dodis $CMD "$i/com.google.frameworks.client.data.android.server.tiktok.aga.AssistantProcessEndpointService" &
+	dodis $CMD "$i/com.alibaba.analytics.AnalyticsService" &
+	dodis $CMD "$i/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" &
+	dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
+	dodis $CMD "$i/com.ss.android.message.log.LogService" &
+	dodis $CMD "$i/com.yandex.metrica.MetricaService" &
     dodis $CMD "$i/androidx.appcompat.app.AppLocalesMetadataHolderService" &
     dodis $CMD "$i/androidx.camera.core.impl.MetadataHolderService" &
     dodis $CMD "$i/com.adyen.checkout.base.analytics.AnalyticsDispatcher" &
@@ -134,6 +132,8 @@ for i in $PLIST; do
     dodis $CMD "$i/com.amazon.client.metrics.nexus.UploadJobService" &
     dodis $CMD "$i/com.applovin.impl.adview.activity.FullscreenAdService" &
     dodis $CMD "$i/com.applovin.impl.sdk.utils.AppKilledService" &
+    dodis $CMD "$i/com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" &
+    dodis $CMD "$i/com.facebook.adspayments.analytics.ExperimentExposeService" &
     dodis $CMD "$i/com.facebook.analytics.appstatelogger.AppStateIntentService" &
     dodis $CMD "$i/com.facebook.analytics2.logger.AlarmBasedUploadService" &
     dodis $CMD "$i/com.facebook.analytics2.logger.GooglePlayUploadService" &
@@ -147,28 +147,24 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.katanasvc.DumperUploadService" &
     dodis $CMD "$i/com.facebook.feed.platformads.AppInstallService" &
     dodis $CMD "$i/com.facebook.feed.platformads.AppInstallTrackerService" &
+    dodis $CMD "$i/com.facebook.notifications.appwidget.bugreporter.NotificationsWidgetDebugHelper" &
     dodis $CMD "$i/com.facebook.push.crossapp.PackageRemovedReporterService" &
     dodis $CMD "$i/com.google.android.build.data.PropertiesServiceHolder" &
+    dodis $CMD "$i/com.google.android.gms.ads.settings.AdsSettingsActivity" &
+    dodis $CMD "$i/com.google.android.gms.common.config.PhenotypeCheckinService" &
+    dodis $CMD "$i/com.google.android.gms.measurement.service.MeasurementBrokerService" &
     dodis $CMD "$i/com.google.android.libraries.inputmethod.featuresplit.metrics.FeatureSplitMultiprocessMetricsService" &
     dodis $CMD "$i/com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitBelowLollipopJobService" &
     dodis $CMD "$i/com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitJobService" &
     dodis $CMD "$i/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" &
     dodis $CMD "$i/com.google.android.location.reporting.service.DispatchingService" &
-    dodis $CMD "$i/com.google.android.location.reporting.service.LocationHistoryInjectorService" &
     dodis $CMD "$i/com.google.android.location.reporting.service.ReportingAndroidService" &
     dodis $CMD "$i/com.google.android.location.reporting.service.ReportingSyncService" &
     dodis $CMD "$i/com.google.android.location.reporting.service.UploadGcmTaskService" &
-    dodis $CMD "$i/com.google.apps.tiktok.account.data.manager.AccountSyncService" &
-    dodis $CMD "$i/com.google.apps.tiktok.concurrent.AndroidFuturesService" &
-    dodis $CMD "$i/com.google.apps.tiktok.concurrent.InternalForegroundService" &
     dodis $CMD "$i/com.google.commerce.tapandpay.android.phenotype.PhenotypeCommitTask" &
     dodis $CMD "$i/com.google.firebase.messaging.cpp.ListenerService" &
     dodis $CMD "$i/com.google.firebase.messaging.cpp.MessageForwardingService" &
     dodis $CMD "$i/com.google.firebase.messaging.cpp.RegistrationIntentService" &
-    dodis $CMD "$i/com.google.frameworks.client.data.android.server.tiktok.InteractorProcessEndpointService" &
-    dodis $CMD "$i/com.google.frameworks.client.data.android.server.tiktok.MainProcessEndpointService" &
-    dodis $CMD "$i/com.google.frameworks.client.data.android.server.tiktok.SearchProcessEndpointService" &
-    dodis $CMD "$i/com.google.frameworks.client.data.android.server.tiktok.TrainProcessEndpointService" &
     dodis $CMD "$i/com.instagram.bugreporter.BugReporterService" &
     dodis $CMD "$i/com.instagram.periodicreporter.SimInfoPeriodicRunnerJobService" &
     dodis $CMD "$i/com.mapbox.android.telemetry.MapboxTelemetryService" &
@@ -203,6 +199,8 @@ for i in $PLIST; do
         dodis $CMD "com.google.android.gms/com.google.android.location.settings.EAlertSettingsV31Activity" &
 		
 		# our fork
+		dodis $CMD "$i/com.google.android.gms.analytics.AnalyticsTaskService" &
+		dodis $CMD "$i/com.google.android.gms.analytics.service.AnalyticsService" &
 		dodis $CMD "$i/com.google.android.gms.checkin.CheckinApiService" &
 		dodis $CMD "$i/com.google.android.gms.checkin.CheckinService" &
 		dodis $CMD "$i/com.google.android.gms.checkin.EventLogService" &
@@ -215,9 +213,9 @@ for i in $PLIST; do
 		dodis $CMD "$i/com.google.android.gms.growth.upgradeparty.scheduler.UpgradePartyTaskService" &
 		dodis $CMD "$i/com.google.android.gms.growth.watchdog.GrowthWatchdogTaskService" &
 		dodis $CMD "$i/com.google.android.gms.locationsharingreporter.service.reporting.periodic.PeriodicReportingMonitoringService" &
-		dodis $CMD "$i/com.google.android.gms.magictether.logging.DailyMetricsLoggerService" &
+		dodis $CMD "$i/com.google.android.gms.magictether.logging.DailyMetricsLoggerService" & #seems to be restarted after reboot
 		dodis $CMD "$i/com.google.android.gms.phenotype.gcm.GcmReceiverService" &
-		dodis $CMD "$i/com.google.android.gms.phenotype.service.sync.PackageUpdateService" &
+		dodis $CMD "$i/com.google.android.gms.phenotype.service.sync.PackageUpdateService" & #seems to be restarted after reboot
 		dodis $CMD "$i/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator" &
 		dodis $CMD "$i/com.google.android.gms.presencemanager.service.PresenceManagerPresenceReportService" &
 		dodis $CMD "$i/com.google.android.gms.stats.PlatformStatsCollectorService" &

@@ -124,8 +124,10 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
     dodis $CMD "$i/com.ss.android.message.log.LogService" &
     dodis $CMD "$i/com.yandex.metrica.MetricaService" &
+    dodis $CMD "$i/android.net.http.MetaDataHolder" &
     dodis $CMD "$i/androidx.appcompat.app.AppLocalesMetadataHolderService" &
     dodis $CMD "$i/androidx.camera.core.impl.MetadataHolderService" &
+    dodis $CMD "$i/androidx.car.app.CarAppMetadataHolderService" &
     dodis $CMD "$i/androidx.credentials.playservices.CredentialProviderMetadataHolder" &
     dodis $CMD "$i/com.adyen.checkout.base.analytics.AnalyticsDispatcher" &
     dodis $CMD "$i/com.adyen.checkout.components.analytics.AnalyticsDispatcher" &
@@ -177,6 +179,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.mapbox.android.telemetry.MapboxTelemetryService" &
     dodis $CMD "$i/com.mapbox.android.telemetry.errors.ErrorReporterJobIntentService" &
     dodis $CMD "$i/com.mapbox.services.android.telemetry.service.TelemetryService" &
+    dodis $CMD "$i/com.microsoft.appmanager.network.service.NetworkDataMetricsService" &
     dodis $CMD "$i/com.mparticle.messaging.InstanceIdService" &
     dodis $CMD "$i/com.mparticle.MPService" &
     dodis $CMD "$i/com.onfido.android.sdk.capture.ui.CrashHandlerService" &
@@ -187,6 +190,21 @@ for i in $PLIST; do
     dodis $CMD "$i/com.salesforce.marketingcloud.NotificationOpenedService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkJobIntentService" &
+    dodis $CMD "$i/com.samsung.android.app.routines.domainmodel.service.SALoggingJobService" &
+    dodis $CMD "$i/com.samsung.android.dialtacts.model.component.service.usagereport.UsageReportServiceContact" &
+    dodis $CMD "$i/com.samsung.android.dialtacts.model.component.service.usagereport.UsageReportServiceDialer" &
+    dodis $CMD "$i/com.samsung.android.dialtacts.model.usagereportservice.UsageReportServiceModel\$UsageReportJobIntentService" &
+    dodis $CMD "$i/com.samsung.android.honeyboard.base.keyinputstatistics.KeyInputStatisticsUpdaterJobService" &
+    dodis $CMD "$i/com.samsung.android.mdeccommon.samsunganalytics.StatusLoggingScheduler" &
+    dodis $CMD "$i/com.samsung.android.messaging.common.dump.DumpLoggerService" &
+    dodis $CMD "$i/com.samsung.android.rubin.serverinterface.batch.task.LogSendTask" &
+    dodis $CMD "$i/com.samsung.android.weather.logger.LoggerService" &
+    dodis $CMD "$i/com.samsung.sdk.clickstreamanalytics.internal.scheduler.CSAJobIntentService" &
+    dodis $CMD "$i/com.sec.android.diagmonagent.sa.scheduler.DataLoggingUploadJobService" &
+    dodis $CMD "$i/com.sec.android.diagmonagent.sa.scheduler.DiagnosticUploadJobService" &
+    dodis $CMD "$i/com.sec.android.diagmonagent.log.ged.scheduler.GEDJobService" &
+    dodis $CMD "$i/com.sec.modem.settings.cplogging.DiagDCIService" &
+    dodis $CMD "$i/com.sec.modem.settings.cplogging.SilentLogService" &
     dodis $CMD "$i/com.snap.ms.ads.AdvertisingIdClientInfoFetcherApiService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.DownloadService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" &
@@ -194,7 +212,12 @@ for i in $PLIST; do
     dodis $CMD "$i/com.ss.android.socialbase.downloader.impls.DownloadHandleService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.notification.DownloadNotificationService" &
     dodis $CMD "$i/com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadService" &
+    dodis $CMD "$i/com.yulore.basic.cache.CacheService" &
+    dodis $CMD "$i/com.yulore.basic.cache.YuloreJobService" &
     dodis $CMD "$i/de.appplant.cordova.plugin.localnotification.ClickReceiver" &
+    dodis $CMD "$i/expo.modules.notifications.service.ExpoFirebaseMessagingService" &
+    dodis $CMD "$i/expo.modules.location.services.LocationTaskService" &
+    dodis $CMD "$i/expo.modules.taskManager.TaskJobService" &
     dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" &
     dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" &
     dodis $CMD "$i/io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider\$ActivityRecognitionService" &

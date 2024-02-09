@@ -119,11 +119,6 @@ for i in $PLIST; do
     dodis $CMD "$i/com.google.firebase.provider.FirebasePerfProvider" &
     
     #our fork
-    dodis $CMD "$i/com.alibaba.analytics.AnalyticsService" &
-    dodis $CMD "$i/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" &
-    dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
-    dodis $CMD "$i/com.ss.android.message.log.LogService" &
-    dodis $CMD "$i/com.yandex.metrica.MetricaService" &
     dodis $CMD "$i/android.net.http.MetaDataHolder" &
     dodis $CMD "$i/androidx.appcompat.app.AppLocalesMetadataHolderService" &
     dodis $CMD "$i/androidx.camera.core.impl.MetadataHolderService" &
@@ -131,8 +126,10 @@ for i in $PLIST; do
     dodis $CMD "$i/androidx.credentials.playservices.CredentialProviderMetadataHolder" &
     dodis $CMD "$i/com.adyen.checkout.base.analytics.AnalyticsDispatcher" &
     dodis $CMD "$i/com.adyen.checkout.components.analytics.AnalyticsDispatcher" &
+    dodis $CMD "$i/com.alibaba.analytics.AnalyticsService" &
     dodis $CMD "$i/com.amazon.client.metrics.nexus.EventUploadService" &
     dodis $CMD "$i/com.amazon.client.metrics.nexus.UploadJobService" &
+    dodis $CMD "$i/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" &
     dodis $CMD "$i/com.applovin.impl.adview.activity.FullscreenAdService" &
     dodis $CMD "$i/com.applovin.impl.sdk.utils.AppKilledService" &
     dodis $CMD "$i/com.blankj.utilcode.util.MessengerUtils\$ServerService" &
@@ -154,9 +151,11 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.katanasvc.DumperUploadService" &
     dodis $CMD "$i/com.facebook.feed.platformads.AppInstallService" &
     dodis $CMD "$i/com.facebook.feed.platformads.AppInstallTrackerService" &
+    dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
     dodis $CMD "$i/com.facebook.notifications.appwidget.bugreporter.NotificationsWidgetDebugHelper" &
     dodis $CMD "$i/com.facebook.push.crossapp.PackageRemovedReporterService" &
     dodis $CMD "$i/com.google.android.build.data.PropertiesServiceHolder" &
+    dodis $CMD "$i/com.google.android.enterprise.connectedapps.CrossProfileConnector_Service" &
     dodis $CMD "$i/com.google.android.gms.ads.settings.AdsSettingsActivity" &
     dodis $CMD "$i/com.google.android.gms.common.config.PhenotypeCheckinService" &
     dodis $CMD "$i/com.google.android.gms.measurement.service.MeasurementBrokerService" &
@@ -194,7 +193,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.samsung.android.dialtacts.model.component.service.usagereport.UsageReportServiceContact" &
     dodis $CMD "$i/com.samsung.android.dialtacts.model.component.service.usagereport.UsageReportServiceDialer" &
     dodis $CMD "$i/com.samsung.android.dialtacts.model.usagereportservice.UsageReportServiceModel\$UsageReportJobIntentService" &
-    dodis $CMD "$i/com.samsung.android.honeyboard.base.keyinputstatistics.KeyInputStatisticsUpdaterJobService" &
+    # dodis $CMD "$i/com.samsung.android.honeyboard.base.keyinputstatistics.KeyInputStatisticsUpdaterJobService" &
     dodis $CMD "$i/com.samsung.android.mdeccommon.samsunganalytics.StatusLoggingScheduler" &
     dodis $CMD "$i/com.samsung.android.messaging.common.dump.DumpLoggerService" &
     dodis $CMD "$i/com.samsung.android.rubin.serverinterface.batch.task.LogSendTask" &
@@ -206,12 +205,14 @@ for i in $PLIST; do
     dodis $CMD "$i/com.sec.modem.settings.cplogging.DiagDCIService" &
     dodis $CMD "$i/com.sec.modem.settings.cplogging.SilentLogService" &
     dodis $CMD "$i/com.snap.ms.ads.AdvertisingIdClientInfoFetcherApiService" &
+    dodis $CMD "$i/com.ss.android.message.log.LogService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.DownloadService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.impls.DownloadHandleService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.notification.DownloadNotificationService" &
     dodis $CMD "$i/com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadService" &
+    dodis $CMD "$i/com.yandex.metrica.MetricaService" &
     dodis $CMD "$i/com.yulore.basic.cache.CacheService" &
     dodis $CMD "$i/com.yulore.basic.cache.YuloreJobService" &
     dodis $CMD "$i/de.appplant.cordova.plugin.localnotification.ClickReceiver" &

@@ -119,19 +119,23 @@ for i in $PLIST; do
     dodis $CMD "$i/com.google.firebase.provider.FirebasePerfProvider" &
     
     #our fork
-	dodis $CMD "$i/com.alibaba.analytics.AnalyticsService" &
-	dodis $CMD "$i/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" &
-	dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
-	dodis $CMD "$i/com.ss.android.message.log.LogService" &
-	dodis $CMD "$i/com.yandex.metrica.MetricaService" &
+    dodis $CMD "$i/com.alibaba.analytics.AnalyticsService" &
+    dodis $CMD "$i/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" &
+    dodis $CMD "$i/com.facebook.messaging.notify.logging.MessagesSystemTrayLogService" &
+    dodis $CMD "$i/com.ss.android.message.log.LogService" &
+    dodis $CMD "$i/com.yandex.metrica.MetricaService" &
     dodis $CMD "$i/androidx.appcompat.app.AppLocalesMetadataHolderService" &
     dodis $CMD "$i/androidx.camera.core.impl.MetadataHolderService" &
+    dodis $CMD "$i/androidx.credentials.playservices.CredentialProviderMetadataHolder" &
     dodis $CMD "$i/com.adyen.checkout.base.analytics.AnalyticsDispatcher" &
     dodis $CMD "$i/com.adyen.checkout.components.analytics.AnalyticsDispatcher" &
     dodis $CMD "$i/com.amazon.client.metrics.nexus.EventUploadService" &
     dodis $CMD "$i/com.amazon.client.metrics.nexus.UploadJobService" &
     dodis $CMD "$i/com.applovin.impl.adview.activity.FullscreenAdService" &
     dodis $CMD "$i/com.applovin.impl.sdk.utils.AppKilledService" &
+    dodis $CMD "$i/com.blankj.utilcode.util.MessengerUtils$ServerService" &
+    dodis $CMD "$i/com.braze.push.BrazeFirebaseMessagingService" &
+    dodis $CMD "$i/com.burnweb.rnsendintent.RNSendIntentModule" &
     dodis $CMD "$i/com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" &
     dodis $CMD "$i/com.facebook.adspayments.analytics.ExperimentExposeService" &
     dodis $CMD "$i/com.facebook.analytics.appstatelogger.AppStateIntentService" &
@@ -142,6 +146,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.bugreporter.core.scheduler.GCMBugReportService" &
     dodis $CMD "$i/com.facebook.bugreporter.core.scheduler.LollipopBugReportService" &
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.MemoryDumpUploadService" &
+    dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.fbsvc.DumperUploadService" &
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.igsvc.DumperUploadGcmTaskService" &
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.igsvc.DumperUploadService" &
     dodis $CMD "$i/com.facebook.common.errorreporting.memory.service.jobschedulercompat.katanasvc.DumperUploadService" &
@@ -165,19 +170,47 @@ for i in $PLIST; do
     dodis $CMD "$i/com.google.firebase.messaging.cpp.ListenerService" &
     dodis $CMD "$i/com.google.firebase.messaging.cpp.MessageForwardingService" &
     dodis $CMD "$i/com.google.firebase.messaging.cpp.RegistrationIntentService" &
+    dodis $CMD "$i/com.instabug.library.internal.video.ScreenRecordingService" &
+    dodis $CMD "$i/com.instabug.library.screenshot.ScreenshotCaptureService" &
     dodis $CMD "$i/com.instagram.bugreporter.BugReporterService" &
     dodis $CMD "$i/com.instagram.periodicreporter.SimInfoPeriodicRunnerJobService" &
     dodis $CMD "$i/com.mapbox.android.telemetry.MapboxTelemetryService" &
     dodis $CMD "$i/com.mapbox.android.telemetry.errors.ErrorReporterJobIntentService" &
     dodis $CMD "$i/com.mapbox.services.android.telemetry.service.TelemetryService" &
+    dodis $CMD "$i/com.mparticle.messaging.InstanceIdService" &
+    dodis $CMD "$i/com.mparticle.MPService" &
+    dodis $CMD "$i/com.onfido.android.sdk.capture.ui.CrashHandlerService" &
+    dodis $CMD "$i/com.onfido.android.sdk.capture.ui.MainProcessStarterService" &
+    dodis $CMD "$i/com.onfido.android.sdk.capture.ui.OnfidoStarterService" &
+    dodis $CMD "$i/com.onfido.android.sdk.capture.token.TokenExpirationHandlerService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.MCService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.NotificationOpenedService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkJobIntentService" &
+    dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.DownloadService" &
+    dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" &
+    dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" &
+    dodis $CMD "$i/com.ss.android.socialbase.downloader.impls.DownloadHandleService" &
+    dodis $CMD "$i/com.ss.android.socialbase.downloader.notification.DownloadNotificationService" &
     dodis $CMD "$i/com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadService" &
     dodis $CMD "$i/de.appplant.cordova.plugin.localnotification.ClickReceiver" &
+    dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" &
+    dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService" &
+    dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" &
     dodis $CMD "$i/org.microg.gms.measurement.MeasurementService" &
     dodis $CMD "$i/org.microg.gms.phenotype.PhenotypeService" &
+
+    # even more stuff
+    dodis $CMD "$i/com.dji.hwpack.HwMessageService" &
+    dodis $CMD "$i/com.huawei.hms.support.api.push.service.HmsMsgService" &
+    dodis $CMD "$i/com.huawei.agconnect.core.ServiceDiscovery" &
+    dodis $CMD "$i/com.xiaomi.mipush.sdk.MessageHandleService" &
+    dodis $CMD "$i/com.xiaomi.mipush.sdk.PushMessageHandler" &
+    dodis $CMD "$i/com.xiaomi.push.service.XMJobService" &
+    dodis $CMD "$i/com.xiaomi.push.service.XMPushService" &
     
     if [ "$i" == "com.google.android.gms" ]; then
         dodis $CMD "com.google.android.gms/com.google.android.gms.auth.account.authenticator.WorkAccountAuthenticatorInitializerReceiver" &

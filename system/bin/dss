@@ -133,7 +133,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.amazon.client.metrics.nexus.UploadJobService" &
     dodis $CMD "$i/com.applovin.impl.adview.activity.FullscreenAdService" &
     dodis $CMD "$i/com.applovin.impl.sdk.utils.AppKilledService" &
-    dodis $CMD "$i/com.blankj.utilcode.util.MessengerUtils$ServerService" &
+    dodis $CMD "$i/com.blankj.utilcode.util.MessengerUtils\$ServerService" &
     dodis $CMD "$i/com.braze.push.BrazeFirebaseMessagingService" &
     dodis $CMD "$i/com.burnweb.rnsendintent.RNSendIntentModule" &
     dodis $CMD "$i/com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" &
@@ -187,6 +187,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.salesforce.marketingcloud.NotificationOpenedService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService" &
     dodis $CMD "$i/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkJobIntentService" &
+    dodis $CMD "$i/com.snap.ms.ads.AdvertisingIdClientInfoFetcherApiService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.DownloadService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" &
     dodis $CMD "$i/com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" &
@@ -196,12 +197,14 @@ for i in $PLIST; do
     dodis $CMD "$i/de.appplant.cordova.plugin.localnotification.ClickReceiver" &
     dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" &
     dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" &
-    dodis $CMD "$i/io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService" &
-    dodis $CMD "$i/io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService" &
-    dodis $CMD "$i/io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider\$ActivityRecognitionService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider\$AndroidGeocodingService" &
+    dodis $CMD "$i/io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider\$GeofencingService" &
     dodis $CMD "$i/io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" &
+    dodis $CMD "$i/mozilla.components.lib.crash.service.SendCrashTelemetryService" &
     dodis $CMD "$i/org.microg.gms.measurement.MeasurementService" &
     dodis $CMD "$i/org.microg.gms.phenotype.PhenotypeService" &
+    dodis $CMD "$i/org.mozilla.telemetry.schedule.jobscheduler.TelemetryJobService" &
 
     # even more stuff
     dodis $CMD "$i/com.dji.hwpack.HwMessageService" &

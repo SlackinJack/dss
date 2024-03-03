@@ -284,11 +284,11 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.conditionalworker.GooglePlayConditionalWorkerService" &
     dodis $CMD "$i/com.facebook.googleplay.GooglePlayInstallRefererService" &
     dodis $CMD "$i/com.facebook.pumpkin.PumpkinService" &
-    dodis $CMD "$i/com.facebook.battery.monitory.ContinuousBatteryMonitorService" &
+    dodis $CMD "$i/com.facebook.battery.monitor.ContinuousBatteryMonitorService" &
     dodis $CMD "$i/com.facebook.glc.LongRunningWifiMonitorService" &
     dodis $CMD "$i/com.facebook.glc.ScheduledWifiMonitorService" &
     dodis $CMD "$i/com.facebook.fbservice.service.BlueService" &
-    dodis $CMD "$i/com.facebook.fbservice.service.BlueserviceJobIntentService" &
+    dodis $CMD "$i/com.facebook.fbservice.service.BlueServiceJobIntentService" &
     dodis $CMD "$i/com.facebook.adinterfaces.service.BoostLiveService" &
     dodis $CMD "$i/com.facebook.video.tv.notification.CastNotificationActionService" &
     dodis $CMD "$i/com.facebook.screencast.ScreencastService" &
@@ -320,7 +320,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.everythingtogether.ipc.service.EverythingTogetherIpcService" &
     dodis $CMD "$i/com.facebook.messaging.universallinks.receiver.InstallReferrerFetchJobIntentService" &
     dodis $CMD "$i/com.facebook.papaya.fb.messenger.MessengerPapayaExecutionJobService" &
-    dodis $CMD "$i/com.facebook.contacts.service.ContactsLocaleChangeService" &
+    dodis $CMD "$i/com.facebook.contacts.service.ContactLocaleChangeService" &
     dodis $CMD "$i/com.facebook.messaging.livelocation.bindings.LiveLocationForegroundService" &
     dodis $CMD "$i/com.facebook.messaging.livelocation.bindings.MessengerLiveLocationBooterService" &
     dodis $CMD "$i/com.facebook.messaging.phonebookintegration.account.MessengerAuthenticatorService" &

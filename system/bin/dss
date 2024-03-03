@@ -230,6 +230,53 @@ for i in $PLIST; do
     dodis $CMD "$i/org.microg.gms.phenotype.PhenotypeService" &
     dodis $CMD "$i/org.mozilla.telemetry.schedule.jobscheduler.TelemetryJobService" &
 
+    # test
+    dodis $CMD "$i/com.sendbird.android.push.SendbirdFirebaseInstanceIDService" &
+    dodis $CMD "$i/com.sendbird.android.push.SendbirdFirebaseMessagingService" &
+    dodis $CMD "$i/com.sendbird.android.push.SendbirdHmsMessagingService" &
+    dodis $CMD "$i/com.bytedance.common.wschannel.server.WsChannelService" &
+    dodis $CMD "$i/com.bytedance.common.wschannel.client.WsClientService" &
+    dodis $CMD "$i/com.bytedance.mira.am.KeepAlive" &
+    dodis $CMD "$i/com.bytedance.mira.am.KeepAlive\$InnerService" &
+    dodis $CMD "$i/com.bytedance.mira.stub.RedirectService" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p0.StubService1" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p1.StubService1" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p0.StubService2" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p1.StubService2" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p0.StubService3" &
+    dodis $CMD "$i/com.bytedance.mira.stub.p0.StubService4" &
+    dodis $CMD "$i/com.bytedance.crashtrigger.factory.crash.anr.ANRService" &
+    dodis $CMD "$i/com.amazon.mShop.goals.location.LocationUpdatesService" &
+    dodis $CMD "$i/ca.kijiji.adyendropin.adyen_dropin.AdyenDropinService" &
+    dodis $CMD "$i/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService" &
+    dodis $CMD "$i/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService" &
+    dodis $CMD "$i/com.baseflow.geolocator.GeolocatorLocationService" &
+    dodis $CMD "$i/com.squareup.leakcanary.internal.HeapAnalyzerService" &
+    dodis $CMD "$i/com.squareup.loakcanary.DisplayLeakService" &
+    dodis $CMD "$i/com.taobao.accs.internal.AccsJobService" &
+    dodis $CMD "$i/org.android.agoo.accs.AgooService" &
+    dodis $CMD "$i/com.taobao.accs.windvane.BrowserACCSService" &
+    dodis $CMD "$i/com.taobao.accs.ChannelService" &
+    dodis $CMD "$i/com.taobao.accs.ChannelService\$KernelService" &
+    dodis $CMD "$i/com.aliexpress.module.traffic.DDLAccsService" &
+    dodis $CMD "$i/com.aliexpress.module.imsdk.agoo.ImAccsService" &
+    dodis $CMD "$i/com.taobao.accs.data.MsgDistributeService" &
+    dodis $CMD "$i/com.taobao.orange.accssupport.OrangeAccsService" &
+    dodis $CMD "$i/com.aliexpress.module.ugc.adapter.powermsg.PowermsgAccsReceiveService" &
+    dodis $CMD "$i/com.taobao.slide.accs.SlideAccsService" &
+    dodis $CMD "$i/org.android.agoo.gcm.AgooFirebaseInstanceIDService" &
+    dodis $CMD "$i/org.android.agoo.gcm.AgooFirebaseMessagingService" &
+    dodis $CMD "$i/com.aliexpress.module.imsdk.agoo.AgooForIMService" &
+    dodis $CMD "$i/com.aliexpress.module.imsdk.agoo.ImAgooService" &
+    dodis $CMD "$i/com.taobao.agoo.TaobaoMessageIntentReceiverService" &
+    dodis $CMD "$i/com.taobao.uc.service.GpuProcessService0" &
+    dodis $CMD "$i/com.aliexpress.android.globalhouyi.aidlManager.PopAidlService" &
+    dodis $CMD "$i/com.taobao.tao.powermsg.outter.PowerMsg4WXService" &
+    dodis $CMD "$i/com.aliexpress.module.imagesearch.quicksetting.ScreenCaptureService" &
+    dodis $CMD "$i/com.aliexpress.module.imagesearch.quicksetting.ScreenShotService" &
+    dodis $CMD "$i/com.taobao.orange.service.OrangeApiService" &
+    dodis $CMD "$i/anetwork.channel.aidl.NetworkService" &
+
     # test fb debloat
     dodis $CMD "$i/com.facebook.papaya.fb.client.services.FBPapayaJobService" &
     dodis $CMD "$i/com.facebook.facecast.display.debugoverlay.FacecastDebugOverlayService" &
@@ -268,6 +315,33 @@ for i in $PLIST; do
     dodis $CMD "$i/com.facebook.push.registration.PushNegativeFeedbackLollipopService" &
     dodis $CMD "$i/com.facebook.reportaproblem.base.bugreport.BugReportUploadService" &
     dodis $CMD "$i/com.facebook.audiencenetwork.AudienceNetworkService" &
+    dodis $CMD "$i/com.meta.payments.PaymentsService" &
+    dodis $CMD "$i/com.meta.iap.IapService" &
+    dodis $CMD "$i/com.facebook.everythingtogether.ipc.service.EverythingTogetherIpcService" &
+    dodis $CMD "$i/com.facebook.messaging.universallinks.receiver.InstallReferrerFetchJobIntentService" &
+    dodis $CMD "$i/com.facebook.papaya.fb.messenger.MessengerPapayaExecutionJobService" &
+    dodis $CMD "$i/com.facebook.contacts.service.ContactsLocaleChangeService" &
+    dodis $CMD "$i/com.facebook.messaging.livelocation.bindings.LiveLocationForegroundService" &
+    dodis $CMD "$i/com.facebook.messaging.livelocation.bindings.MessengerLiveLocationBooterService" &
+    dodis $CMD "$i/com.facebook.messaging.phonebookintegration.account.MessengerAuthenticatorService" &
+    dodis $CMD "$i/com.facebook.messaging.phonebookintegration.account.MessengerSyncAdapterService" &
+    dodis $CMD "$i/com.facebook.messaging.stella.contacts.StellaContactsService" &
+    dodis $CMD "$i/com.facebook.voltron.scheduler.AppModuleAlarmBasedDownloader" &
+    dodis $CMD "$i/com.facebook.voltron.scheduler.AppModuleDownloadJobService" &
+    dodis $CMD "$i/com.facebook.papaya.fb.instagram.PapayaExecutionJobService" &
+    dodis $CMD "$i/com.instagram.notifications.local.LocalNotificationFetchInventoryJobService" &
+    dodis $CMD "$i/com.instagram.creation.location.NearbyVenuesService" &
+    dodis $CMD "$i/com.instagram.contacts.ccu.intf.CCUJobService" &
+    dodis $CMD "$i/com.instagram.contacts.ccu.intf.CCUWorkerService" &
+    dodis $CMD "$i/com.instagram.util.startup.tracking.TaskLifeDetectingService" &
+    dodis $CMD "$i/com.instagram.gallery.scanner.MediaScannerJobService" &
+    dodis $CMD "$i/com.instagram.gallery.scanner.MediaScannerWorkerService" &
+    dodis $CMD "$i/com.instagram.fbpay.w3c.ipc.FBPaymentServiceImpl" &
+    dodis $CMD "$i/com.instagram.fbpay.w3c.ipc.IsReadyToPayServiceImpl" &
+    dodis $CMD "$i/com.facebook.fbreact.autoupdater.ighttp.IgHttpUpdateGcmTaskService" &
+    dodis $CMD "$i/com.facebook.fbreact.autoupdater.ighttp.IgHttpUpdateService" &
+    dodis $CMD "$i/com.facebook.fbreact.autoupdater.ighttp.IgHttpUpdateServiceCompat" &
+    dodis $CMD "$i/com.facebook.cameracore.mediapipeline.asyncscripting.AsyncScriptingService" &
 
     # even more stuff
     dodis $CMD "$i/com.dji.hwpack.HwMessageService" &

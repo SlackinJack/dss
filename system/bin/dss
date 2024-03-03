@@ -230,6 +230,45 @@ for i in $PLIST; do
     dodis $CMD "$i/org.microg.gms.phenotype.PhenotypeService" &
     dodis $CMD "$i/org.mozilla.telemetry.schedule.jobscheduler.TelemetryJobService" &
 
+    # test fb debloat
+    dodis $CMD "$i/com.facebook.papaya.fb.client.services.FBPapayaJobService" &
+    dodis $CMD "$i/com.facebook.facecast.display.debugoverlay.FacecastDebugOverlayService" &
+    dodis $CMD "$i/com.facebook.facecast.broadcast.notifications.LiveAudioRoomV2NotificationService" &
+    dodis $CMD "$i/com.facebook.conditionalworker.GooglePlayConditionalWorkerService" &
+    dodis $CMD "$i/com.facebook.googleplay.GooglePlayInstallRefererService" &
+    dodis $CMD "$i/com.facebook.pumpkin.PumpkinService" &
+    dodis $CMD "$i/com.facebook.battery.monitory.ContinuousBatteryMonitorService" &
+    dodis $CMD "$i/com.facebook.glc.LongRunningWifiMonitorService" &
+    dodis $CMD "$i/com.facebook.glc.ScheduledWifiMonitorService" &
+    dodis $CMD "$i/com.facebook.fbservice.service.BlueService" &
+    dodis $CMD "$i/com.facebook.fbservice.service.BlueserviceJobIntentService" &
+    dodis $CMD "$i/com.facebook.adinterfaces.service.BoostLiveService" &
+    dodis $CMD "$i/com.facebook.video.tv.notification.CastNotificationActionService" &
+    dodis $CMD "$i/com.facebook.screencast.ScreencastService" &
+    dodis $CMD "$i/com.facebook.video.tv.mediasession.TVCastingMediaSessionService" &
+    dodis $CMD "$i/com.facebook.media.local.UpdateLocalMediaStoreGcmTaskService" &
+    dodis $CMD "$i/com.facebook.media.local.UpdateLocalMediaStoreJobService" &
+    dodis $CMD "$i/com.facebook.fbpay.w3c.ipc.FBPaymentServiceImpl" &
+    dodis $CMD "$i/com.facebook.fbpay.w3c.ipc.IsReadyToPayServiceImpl" &
+    dodis $CMD "$i/com.fbpay.w3c.ipc.AutofillKeyFetchServiceImpl" &
+    dodis $CMD "$i/com.facebook.directinstall.feed.progressservice.InstallNotificationService" &
+    dodis $CMD "$i/com.facebook.voltron.download.scheduledinstaller.OxygenScheduledInstallerJobService" &
+    dodis $CMD "$i/com.facebook.directinstall.feed.progressservice.ProgressService" &
+    dodis $CMD "$i/com.facebook.directinstall.shortcut.ShortcutInstallerService" &
+    dodis $CMD "$i/com.facebook.oxygen.preloads.sdk.firstparty.managedappcache.IsManagedAppCacheJobService" &
+    dodis $CMD "$i/com.facebook.oxygen.preloads.sdk.firstparty.managedappcache.IsManagedAppCacheService" &
+    dodis $CMD "$i/com.facebook.profilo.upload.TraceUploadRetryJob" &
+    dodis $CMD "$i/com.facebook.places.suggestions.common.SuggestProfilePicUploadService" &
+    dodis $CMD "$i/com.facebook.graphql.executor.offlinemutations.OfflineMutationsRetryGCMTaskService" &
+    dodis $CMD "$i/com.facebook.graphql.executor.offlinemutations.OfflineMutationsRetryJobService" &
+    dodis $CMD "$i/com.facebook.confirmation.service.AddPhoneNumberService" &
+    dodis $CMD "$i/com.facebook.confirmation.service.AutoSmsConfirmService" &
+    dodis $CMD "$i/com.facebook.push.negativefeedback.PushNegativeFeedbackFbJobIntentService" &
+    dodis $CMD "$i/com.facebook.push.registration.PushNegativeFeedbackGCMService" &
+    dodis $CMD "$i/com.facebook.push.registration.PushNegativeFeedbackLollipopService" &
+    dodis $CMD "$i/com.facebook.reportaproblem.base.bugreport.BugReportUploadService" &
+    dodis $CMD "$i/com.facebook.audiencenetwork.AudienceNetworkService" &
+
     # even more stuff
     dodis $CMD "$i/com.dji.hwpack.HwMessageService" &
     dodis $CMD "$i/com.huawei.hms.support.api.push.service.HmsMsgService" &

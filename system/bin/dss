@@ -334,7 +334,7 @@ for i in $PLIST; do
     dodis $CMD "$i/com.instagram.contacts.ccu.intf.CCUJobService" &
     dodis $CMD "$i/com.instagram.contacts.ccu.intf.CCUWorkerService" &
     dodis $CMD "$i/com.instagram.util.startup.tracking.TaskLifeDetectingService" &
-    dodis $CMD "$i/com.instagram.gallery.scanner.MediaScannerJobService" &
+    #dodis $CMD "$i/com.instagram.gallery.scanner.MediaScannerJobService" &
     dodis $CMD "$i/com.instagram.gallery.scanner.MediaScannerWorkerService" &
     dodis $CMD "$i/com.instagram.fbpay.w3c.ipc.FBPaymentServiceImpl" &
     dodis $CMD "$i/com.instagram.fbpay.w3c.ipc.IsReadyToPayServiceImpl" &
